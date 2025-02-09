@@ -1,8 +1,10 @@
 ---
+layout: archive
 title: "Experience Page"
-collection: experience
-category: manuscripts
-permalink: /experience
+permalink: /experience/
+author_profile: true
+redirect_from:
+  - /resume
 ---
 
 > This page shows my research and project experience.

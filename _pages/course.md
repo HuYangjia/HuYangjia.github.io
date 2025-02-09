@@ -1,8 +1,10 @@
 ---
+layout: archive
 title: "Courses Page"
-collection: course
-category: manuscripts
-permalink: /course
+permalink: /course/
+author_profile: true
+redirect_from:
+  - /resume
 ---
 
 > This page shows the courses/knowledge I have taken and will take.
