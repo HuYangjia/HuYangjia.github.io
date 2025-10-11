@@ -11,7 +11,7 @@ redirect_from:
 
 I am a Junior Undergraduate at the University of Science and Technology of China (USTC), majoring in Computer Science and Technology. My passion lies in computer architecture and machine learning, and I am eager to contribute to innovative computing systems.
 
-I am looking for 2025 summer internship opportunity.
+<!-- **I am looking for 2025 summer internship opportunity.** -->
 
 You can find my CV here:[YangjiaHu_CV.pdf](http://huyangjia.github.io/files/main.pdf)
 
@@ -35,7 +35,7 @@ My research interests include computer architecture, particularly in the design 
 
 ## Skills
 
-+ Programming Languages: Python, C/C++, Verilog, SystemVerilog,  Java
++ Programming Languages: Python, C/C++, Verilog, SystemVerilog, Java
 + Tools: Git, Maven, Make, Verilator, Docker
 + Software: Vivado(Proficient)
 

@@ -51,12 +51,12 @@ Through this project, I gained hands-on experience in CPU design and implementat
 + Apr 2024 - Jul 2024
 + Supervisor: Prof. Kai Xing, USTC
 
-This project aims to rewrite the Linux kernel bpf_trace module with Rust. My team and I translate and debug the bpf_trace module in the Linux kernel from C to Rust, enhancing the module’s safety and performance.
+This project aims to rewrite the Linux kernel bpf_trace module with Rust. My team and I translate and debug the bpf_trace module in the Linux kernel from C to Rust, enhancing the module's safety and performance.
 
 My contribution:
 + Reorganized and refactored C language structures into Rust, ensuring efficient data structure performance and
 compatibility.
-+ Translated key portions of the module’s C code to Rust, ensuring functional correctness and performance
++ Translated key portions of the module's C code to Rust, ensuring functional correctness and performance
 optimization, and participated in the overall debugging process.
 
 
@@ -71,8 +71,8 @@ The project includes the following parts:
 
 1. **System Design & Implementation**: Design a 2-issue out-of-order CPU based on the new language.
    1. Design and build critical components including the issue queue, register renaming, and reorder buffer.
-   2. Utilize the new hardware description language to enable more flexible and efficient design of the CPU’s components, leveraging its advanced features to streamline development.
+   2. Utilize the new hardware description language to enable more flexible and efficient design of the CPU's components, leveraging its advanced features to streamline development.
 2. **Challenges and Solutions**:
-   1. Overcoming the limitations of traditional hardware description languages by taking advantage of the new language’s features to simplify and optimize the design process.
+   1. Overcoming the limitations of traditional hardware description languages by taking advantage of the new language's features to simplify and optimize the design process.
 
-In this project, I constructed a high-performance CPU using a new hardware description language, gaining valuable experience in CPU design and implementation. In the following months, I will contribute to automatic pipline splitting feature for this language
+In this project, I constructed a high-performance CPU using a new hardware description language, gaining valuable experience in CPU design and implementation. In the following months, I will contribute to automatic pipline splitting feature for this language.
