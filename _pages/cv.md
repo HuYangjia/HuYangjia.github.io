@@ -7,4 +7,4 @@ redirect_from:
   - /resume
 ---
 
-Please refer to my [CV](http://huyangjia.github.io/files/main.pdf) for more details.
+Please refer to my [CV](http://huyangjia.github.io/files/HuYangjia_CV.pdf) for more details.

@@ -9,11 +9,11 @@ redirect_from:
 
 ## About
 
-I am a Junior Undergraduate at the University of Science and Technology of China (USTC), majoring in Computer Science and Technology. My passion lies in computer architecture and machine learning, and I am eager to contribute to innovative computing systems.
+I am a senior undergraduate in Computer Science and Technology at the University of Science and Technology of China (USTC) and an incoming PhD student in Prof. Song Guo’s group at HKUST, where I plan to work on AI infrastructure for LLM, VLM and World Model.
 
 <!-- **I am looking for 2025 summer internship opportunity.** -->
 
-You can find my CV here:[YangjiaHu_CV.pdf](http://huyangjia.github.io/files/main.pdf)
+You can find my CV here:[YangjiaHu_CV.pdf](http://huyangjia.github.io/files/HuYangjia_CV.pdf)
 
 ## Education
 
