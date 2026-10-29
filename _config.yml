@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Home"
+title                    : "Yangjia Hu"
 title_separator          : "-"
 name                     : &name "Yangjia Hu"
-description              : &description "personal description"
+description              : &description "Yangjia Hu is a PhD student at HKUST working on efficient LLM inference, low-bit quantization, and GPU–CPU memory management."
 url                      : https://huyangjia.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Huyangjia/Huyangjia.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "Yangjia Hu"
   pronouns         : # example: "she/her"  
-  bio              : "I am a senior undergraduate in Computer Science and Technology at the University of Science and Technology of China (USTC) and an incoming PhD student in Prof. Song Guo’s group at HKUST, where I plan to work on AI infrastructure for LLM, VLM and World Model."
-  location         : "AnHui, HeiFei, China"
-  employer         : "University of Science and Technology of China"
+  bio              : "PhD student at HKUST. Efficient LLM inference, low-bit quantization, and GPU–CPU memory management."
+  location         : "Hong Kong"
+  employer         : "HKUST"
   uri              : # URL
-  email            : "huyangjia@mail.ustc.edu.cn" 
+  email            : "yhudv@connect.ust.hk"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -158,6 +158,11 @@ include:
   - _pages
   - files
 exclude:
+  - FinalCV
+  # Retired HKPFS application materials; retain sources without publishing them.
+  - _pages/info.md
+  - files/ICEMI接收证明.pdf
+  - files/ICEMI20250077.pdf
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

@@ -8,15 +8,12 @@ main:
   - title: "Research & Projects"
     url: /experience/
 
-  - title: "Courses & knnowledges"
+  - title: "Courses"
     url: /course/
 
   - title: "CV"
     url: /cv/
 
-  - title: "Blog"
+  - title: "Research Notes"
     url: /blog/
-
-  - title: "INFO"
-    url: /info/
 
