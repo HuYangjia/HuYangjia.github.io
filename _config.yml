@@ -159,8 +159,7 @@ include:
   - files
 exclude:
   - FinalCV
-  # Retired HKPFS application materials; retain sources without publishing them.
-  - _pages/info.md
+  # Retired application attachments.
   - files/ICEMI接收证明.pdf
   - files/ICEMI20250077.pdf
   - "*.sublime-project"

@@ -3,7 +3,7 @@ layout: single
 title: "Research & Projects"
 permalink: /experience/
 author_profile: true
-excerpt: "Research and engineering experience in LLM quantization, KV cache management, systems software, and computer architecture."
+excerpt: "Research, engineering, and open-source contributions in LLM quantization, KV cache management, GPU sampling, and systems software."
 ---
 
 My recent work focuses on efficient LLM inference. The projects below connect quantization and memory-management research with system implementation and performance analysis.
@@ -65,6 +65,24 @@ Long-context sparse attention creates a memory-management problem: the KV entrie
 - **Evaluation:** Built a LongBench-v2 trace-driven KV cache simulator. Compared with on-demand loading, per-step H2D transfers decreased from **108 to 32 KV entries** (about 70%), and the miss rate from **5.28% to 1.58%**.
 
 These are trace-driven simulation results. The related [Tencent internship]({{ '/experience/#tencent' | relative_url }}) focused on engineering this approach under production-system constraints.
+
+## FlashInfer: GPU Sampling Boundary Correctness
+{: #flashinfer}
+
+**Open-source contribution · CUDA/C++ · PR #3774**<br>
+Opened Jun 2026 · **Open / under review**, checked Nov 11, 2026
+
+I authored a PR addressing over-acceptance of equal-probability tokens at the truncation boundary of FlashInfer's GPU rejection samplers. The work extends the fix across sampling, renormalization, masking, and top-k-first paths so that these APIs share a documented probability-descending, original-index-ascending tie convention.
+
+- **Exact sampling semantics:** Keep exactly `min(k, vocab_size)` top-k positions and the shortest top-p prefix reaching the threshold, including the crossing token. Correct rejection-loop exits so a rejected boundary proposal cannot become the returned sample.
+- **CUDA implementation and architecture coverage:** Extend boundary resolution to SM90 split-row cluster kernels, distribute work across ranks, and defer equality checks until necessary. Add launch bounds to keep the 1,024-thread rejection kernels within register constraints.
+- **Regression testing:** Add GPU tests for rejected candidates, large-vocabulary and cross-rank boundaries, retained distributions, signed-zero ties, cumulative-threshold precision, and consistency between direct sampling and filtering paths.
+- **Performance and review iteration:** Build reproducible H800 comparisons with fp32, bf16-derived, and strictly unique inputs. Retain the existing double-precision boundary accumulation by default, with compensated summation available as an opt-in diagnostic build after its sampling regressions were measured.
+
+The latest PR report records **2,727 passed and 792 skipped** tests in each of the two build modes. The PR remains under review, with remaining performance overhead documented alongside the improvements.
+
+[Pull Request](https://github.com/flashinfer-ai/flashinfer/pull/3774){: .btn .btn--primary}
+[Technical Notes (中文)]({{ '/research/flashinfer-sampling/' | relative_url }}){: .btn}
 
 ## Linux Kernel bpf_trace Module in Rust
 {: #rust-kernel}

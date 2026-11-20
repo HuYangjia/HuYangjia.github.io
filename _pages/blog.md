@@ -4,12 +4,12 @@ permalink: /blog/
 title: "Research Notes"
 author_profile: true
 lang: zh-CN
-excerpt: "量化研究与推理基础设施工作记录：MosaicQuant 研究回顾，以及腾讯 KV Cache 预取与卸载实习。"
+excerpt: "量化研究、推理基础设施与开源贡献记录：MosaicQuant、腾讯 KV Cache 实习和 FlashInfer GPU 采样边界修复。"
 redirect_from:
   - /blog.html
 ---
 
-这里记录量化研究与推理基础设施工作中的思路和实践。
+这里记录量化研究、推理基础设施与开源贡献中的思路和实践。
 
 ## 笔记目录
 
@@ -17,6 +17,8 @@ redirect_from:
    从 DiT 的带宽瓶颈、LLM 场景和块稀疏选择，到 INT4/FP4 精度评估。
 2. [腾讯实习：KV Cache 预取与卸载]({{ '/research/tencent-kv-cache/' | relative_url }})<br>
    从原理测试到 MAP 方案与 GPU 方向确认：全量 KV 交换、粒度解耦及缓存管理带宽分析。
+3. [FlashInfer：GPU 采样边界修复]({{ '/research/flashinfer-sampling/' | relative_url }})<br>
+   统一 top-k/top-p 的边界 tie 规则，补齐 GPU 回归测试，并迭代 SM90 正确性与性能；PR 仍在评审中。
 
 ## 从 ZipperQuant 到 MosaicQuant：一次量化研究的路线调整
 {: #mosaicquant}

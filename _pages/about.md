@@ -16,7 +16,7 @@ I received my bachelor's degree in Computer Science and Technology from the **Un
 
 [English Research CV]({{ '/files/HuYangjia_CV.pdf' | relative_url }}){: .btn .btn--primary}
 [Research & Projects]({{ '/experience/' | relative_url }}){: .btn}
-[Email](mailto:yhudv@connect.ust.hk){: .btn}
+[Email](#contact){: .btn}
 
 ## Selected Research & Industry Experience
 
@@ -44,6 +44,16 @@ I studied step-wise access locality in DeepSeek-V3.2 sparse attention, designed 
 
 [Thesis Details]({{ '/experience/#kv-cache-prefetching' | relative_url }})
 
+## Open-source Contributions
+
+### FlashInfer: GPU Sampling Boundary Correctness
+
+**PR author · CUDA/C++ · Open / under review** · Status checked Nov 11, 2026
+
+I authored a PR to fix over-acceptance of tokens tied at top-k and top-p sampling boundaries. The contribution aligns tie handling across sampling and filtering APIs, adds GPU regression coverage, and improves SM90 boundary resolution through iterations with maintainer feedback.
+
+[FlashInfer PR #3774](https://github.com/flashinfer-ai/flashinfer/pull/3774) · [Contribution Details]({{ '/experience/#flashinfer' | relative_url }}) · [技术笔记]({{ '/research/flashinfer-sampling/' | relative_url }})
+
 ## Education
 
 - **Hong Kong University of Science and Technology**, Hong Kong<br>
@@ -56,7 +66,6 @@ I studied step-wise access locality in DeepSeek-V3.2 sparse attention, designed 
 ## Selected Honors
 
 - **Guo Moruo Scholarship** (top 1%), 2026
-- **Hong Kong Government Scholarship**, 2026
 - **National Scholarship** (top 2%), 2024 and 2025
 - **Third Prize, National Finals**, 8th National College Students Computer System Ability Competition, CPU Track (team award), 2024
 - **National Encouragement Scholarship**, 2023
@@ -67,5 +76,5 @@ Python, C/C++, Rust, CUDA, PyTorch, and vLLM; experience with quantization exper
 
 ## Contact
 
-**Email:** [yhudv@connect.ust.hk](mailto:yhudv@connect.ust.hk)<br>
+**Email:** yhudv[at]connect.ust.hk<br>
 **Affiliation:** Computer Science and Engineering, HKUST, Hong Kong
